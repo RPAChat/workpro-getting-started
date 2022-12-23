@@ -1,7 +1,7 @@
 import { ScanStatus, WechatyBuilder } from 'wechaty'
 import QrcodeTerminal from 'qrcode-terminal'
 
-const token = 'puppet_workpro_example_token'
+const token = 'puppet_workpro_example_token' // put your token here
 const bot = WechatyBuilder.build({
   puppet: 'wechaty-puppet-service',
   puppetOptions: {
