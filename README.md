@@ -5,6 +5,10 @@
 
 It will automatically install dependencies. Just put your token in and you are ready to go!
 
+You can also try latest feature with @juzi/wechaty. Checkout branch 'latest-features' or try with this
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=latest-features&repo=581390026)
+
 ## How to run
 Apply for a 7-day free trial (coming soon) token and put your token in 'token' in index.ts.
 
