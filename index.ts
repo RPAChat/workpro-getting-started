@@ -1,9 +1,9 @@
-import { ScanStatus, WechatyBuilder } from 'wechaty'
+import { ScanStatus, WechatyBuilder } from '@juzi/wechaty'
 import QrcodeTerminal from 'qrcode-terminal'
 
 const token = 'puppet_workpro_example_token' // put your token here
 const bot = WechatyBuilder.build({
-  puppet: 'wechaty-puppet-service',
+  puppet: '@juzi/wechaty-puppet-service',
   puppetOptions: {
     token,
     tls: {
@@ -34,6 +34,12 @@ bot.on('scan', (qrcode, status, data) => {
   console.log(`new message received: ${JSON.stringify(message)}`)
 }).on('error', err => {
   console.log(err)
+}).on('room-announce', (...args) => {
+  console.log(`room announce: ${JSON.stringify(args)}`)
+}).on('contact-alias', (...args) => {
+  console.log(`contact alias: ${JSON.stringify(args)}`)
+}).on('tag', (...args) => {
+  console.log(`tag: ${JSON.stringify(args)}`)
 })
 
 bot.start()
