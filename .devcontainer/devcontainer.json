@@ -1,0 +1,13 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postCreateCommand": "npm install ts-node -g",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "index.ts"
+      ]
+    }
+  }
+}
