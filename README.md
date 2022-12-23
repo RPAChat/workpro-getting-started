@@ -11,6 +11,11 @@ npm start
 
 The system should start and the QrCode should appear in terminal.
 
+## Potential problems
+
+- System hangup after room announcement changes, See: https://github.com/wechaty/puppet-service/issues/216.
+- Not able to use latest features, please try with @juzi/wechaty. We are working on pushing new feature to community version.
+
 ## Introducing new wecom puppet service: Workpro
 Hello Wechaty community!
 
