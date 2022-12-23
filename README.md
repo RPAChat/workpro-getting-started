@@ -1,7 +1,10 @@
 # workpro-getting-started
 
+## Latest Feature:
+Run with @juzi/wechaty and enjoy latest features! We are working on pushing these features to community version however that takes time.
+
 ## New and Recommended: Run with Github Codespace
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=581390026)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=latest-features&repo=581390026)
 
 It will automatically install dependencies. Just put your token in and you are ready to go!
 
