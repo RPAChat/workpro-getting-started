@@ -35,7 +35,7 @@ Hello!
 
 We are RPAChat, from Silcon Valley, developer of wechaty-puppet-wxwork(hereinafter called 'WxWork'). We focused on creating Robots from IM based on RPA technique. RPAChat is providing marketing cloud solution for well-known brands e.g. P&G, L’ORÉAL Paris, Swisse and POPMART.
 
-![image](https://user-images.githubusercontent.com/13669999/209262332-43531e61-bf70-434b-b820-0deb63776218.png)
+![image](https://user-images.githubusercontent.com/13669999/209313637-cc938c6d-2144-4784-8ebd-3c638080ba43.jpg)
 
 Now we are proud to announce our next-generation wecom puppet: wechaty-puppet-workpro(hereinafter called 'WorkPro').
 
