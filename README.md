@@ -1,13 +1,13 @@
 # workpro-getting-started
 
 ## New and Recommended: Run with Github Codespace
-[![Open in GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
+[![Open in GitHub Codespaces]](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
 
 It will automatically install dependencies. Just put your token in and you are ready to go!
 
 You can also try latest feature with @juzi/wechaty. Checkout branch 'latest-features' or try with this
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=latest-features&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
+[![Open in GitHub Codespaces]](https://github.com/codespaces/new?hide_repo_select=true&ref=latest-features&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
 
 ## How to run
 Apply for a 7-day free trial (coming soon) token and put your token in 'token' in index.ts.
