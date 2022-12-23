@@ -20,6 +20,11 @@ npm start
 
 The system should start and the QrCode should appear in terminal.
 
+## How to apply for 7day free trial token:
+
+For further information and 7-day free trial token application, please scan the following QRCode with wechat or wecom:
+![juziGitHub-WorkPro-gettingstarted](https://user-images.githubusercontent.com/13669999/209300458-363aaf4b-1a8b-43f1-bed6-d53cc0529a20.png)
+
 ## Potential problems
 
 - System hangup after room announcement changes, See: https://github.com/wechaty/puppet-service/issues/216.
