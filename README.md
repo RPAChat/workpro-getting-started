@@ -1,6 +1,6 @@
 # workpro-getting-started
 
-**Note: This repo is for basic code to run WorkPro only. To submit a issue, please go to: [bug report](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_bug.md&title=%5BBUG%5DWorkPro%3A) / [feature request](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_feat.md&title=%5BFEAT%5DWorkPro%3A)**
+# **Note: This repo is a demonstration of basic code to run WorkPro. To submit a issue, please go to: [bug report](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_bug.md&title=%5BBUG%5DWorkPro%3A) / [feature request](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_feat.md&title=%5BFEAT%5DWorkPro%3A)**
 
 ## New and Recommended: Run with Github Codespace
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
@@ -25,6 +25,7 @@ The system should start and the QrCode should appear in terminal.
 ## How to apply for 7day free trial token:
 
 For further information and 7-day free trial token application, please scan the following QRCode with wechat or wecom:
+
 ![juziGitHub-WorkPro-gettingstarted](https://user-images.githubusercontent.com/13669999/209300458-363aaf4b-1a8b-43f1-bed6-d53cc0529a20.png)
 
 ## Potential problems
