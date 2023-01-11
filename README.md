@@ -1,5 +1,7 @@
 # workpro-getting-started
 
+**Note: This repo is for basic code to run WorkPro only. To submit a issue, please go to: [bug report](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_bug.md&title=%5BBUG%5DWorkPro%3A) / [feature request](https://github.com/wechaty/puppet-supports/issues/new?assignees=su-chang%2Chcfw007&labels=workpro&template=workpro_feat.md&title=%5BFEAT%5DWorkPro%3A)**
+
 ## New and Recommended: Run with Github Codespace
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=581586825&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=SouthEastAsia)
 
