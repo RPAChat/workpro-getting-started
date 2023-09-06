@@ -1,4 +1,4 @@
-import { ScanStatus, WechatyBuilder } from '@juzi/wechaty'
+import { ScanStatus, WechatyBuilder,types } from '@juzi/wechaty'
 import QrcodeTerminal from 'qrcode-terminal'
 
 const token = 'puppet_workpro_example_token' // put your token here
@@ -13,6 +13,10 @@ const bot = WechatyBuilder.build({
   }
 })
 
+const store = {
+  qrcodeKey: '',
+}
+
 bot.on('scan', (qrcode, status, data) => {
   console.log(`
   ============================================================
@@ -20,9 +24,25 @@ bot.on('scan', (qrcode, status, data) => {
   ============================================================
   `)
   if (status === ScanStatus.Waiting) {
+    store.qrcodeKey= getQrcodeKey(qrcode) || ''
     QrcodeTerminal.generate(qrcode, {
       small: true
     })
+  }
+}).on('verify-code', async (id: string, message: string, scene: types.VerifyCodeScene, status: types.VerifyCodeStatus) => {
+  if (status === types.VerifyCodeStatus.WAITING && scene === types.VerifyCodeScene.LOGIN && id === store.qrcodeKey) {
+    console.log(`receive verify-code event, id: ${id}, message: ${message}, scene: ${types.VerifyCodeScene[scene]} status: ${types.VerifyCodeStatus[status]}`)
+    const verifyCode = '123456' // 通过一些途径输入验证码
+    try {
+      await bot.enterVerifyCode(id, verifyCode) // 如果没抛错，则说明输入成功，会推送登录事件
+      return
+    } catch (e) {
+      console.log((e as Error).message)
+      // 如果抛错，请根据 message 处理，目前发现可以输错3次，超过3次错误需要重新扫码。
+      // 错误关键词: 验证码错误输入错误，请重新输入
+      // 错误关键词：验证码错误次数超过阈值，请重新扫码'
+      // 目前不会推送 EXPIRED 事件，需要根据错误内容判断
+    }
   }
 }).on('login', user => {
   console.log(`
@@ -43,3 +63,8 @@ bot.on('scan', (qrcode, status, data) => {
 })
 
 bot.start()
+
+const getQrcodeKey = (urlStr: string) => {
+  const url = new URL(urlStr);
+  return url.searchParams.get('key');
+}

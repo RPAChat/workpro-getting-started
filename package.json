@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/juzibot/workpro-getting-started#readme",
   "dependencies": {
-    "@juzi/wechaty": "^1.0.44",
+    "@juzi/wechaty": "^1.0.66",
     "qrcode-terminal": "^0.12.0"
   },
   "devDependencies": {
